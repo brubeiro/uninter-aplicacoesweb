@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Exercicio 1 aula 4 prática-Desenvolva uma página com um formulário de cadastro (o tema fica à sua escolha) que contenha todos os elementos de formulário apresentados (radio, select, checkbox, text, date, email, textarea, submit). Utilize os atributos:method=”get” action=”teste.jsp”-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<h1> pizzariauninter.com</h1>
+    <form method="post" action="teste.jsp">
+               Nome: <input type="text" name="nome"> <br>
+       Email: <input type="email" name="email" 
+       <br>
+              <br> Tamanho: <input type="radio" name="tamanho" value="g" checked> Grande    
+                <input type="radio" name="tamanho" value="m"> Medio
+                <input type="radio" name="tamanho" value="p"> Pequeno
+
+<br>
+
+<br><br>Sabor: <select name ="sabor"> 
+        <option> Calabresa</option>
+        <option> Napolitana</option>
+        <option> Marguerita</option>
+</select>
+<br>
+<input type="checkbox" name="borda recheada" value="sim"> Borda
+<input type="checkbox" name="queijo" value="sim"> Queijo extra
+<br>
+
+Data Entrega: <input type="date" name="dataEntrega">
+<br><br><br><br>
+Comentário:<br> <textarea name="mensagem" rows="10" cols="30"></textarea>
+ <br>
+ <input type="submit">
+</form>
+<br>
+<br>
+<img src="pizza.jpg" width="300">
+
+</body>
+</html>
